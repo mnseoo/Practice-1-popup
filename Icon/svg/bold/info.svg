@@ -1,5 +1,5 @@
-<svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon" transform="translate(2 2)">
 <path id="Vector" d="M10 0C15.5228 4.82823e-07 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 4.62145e-07 15.5228 0 10C4.82823e-07 4.47715 4.47715 4.62146e-07 10 0Z" fill="currentColor"/>
 <rect id="Rectangle 3470310" x="11" y="15" width="2" height="6" transform="rotate(-180 11 15)" fill="white"/>
 <rect id="Rectangle 3470311" x="11" y="7" width="2" height="2" transform="rotate(-180 11 7)" fill="white"/>
