@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="ai-grad" x1="0" y1="0" x2="1" y2="1">
+<stop offset="9.375%" stop-color="#02BE8F"/>
+<stop offset="93.75%" stop-color="#1778F8"/>
+</linearGradient>
+</defs>
+<rect x="2" y="2" width="20" height="20" rx="4" fill="url(#ai-grad)"/>
+<rect x="2.5" y="2.5" width="19" height="19" rx="3.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1"/>
+<g transform="translate(5.27 7.1)">
+<path d="M0 9.89844L3.48633 0H5.67383L9.17383 9.89844H7.27344L6.44629 7.45117H2.7207L1.90039 9.89844H0ZM5.96777 6.01562L4.62109 2.02344H4.53906L3.19922 6.01562H5.96777Z" fill="#FFFFFF"/>
+<path d="M12.127 9.89844H10.3496V0H12.127V9.89844Z" fill="#FFFFFF"/>
+</g>
+</svg>
