@@ -22,14 +22,16 @@
 }
 
 /* 단색 — fill 속성이 명시된 element만 currentColor로 강제.
-   fill 속성이 없는 path는 부모 <svg fill="none">을 상속 → outline-stroke 아이콘
-   (heart/pen 등)이 검정 덩어리로 차는 것을 방지. */
-.bds-icon:not(.bds-icon--colored) svg [fill]:not([fill="none"]) {
+   - fill="none"은 그대로 (outline-stroke 아이콘 hole 보존)
+   - fill="white"는 그대로 (외곽 채움 + 안쪽 hole 효과: 시계 바늘, info "i", profile 사람,
+     warning "!", down-circle chevron 등). 라이트 모드 가정 — 다크 모드 지원 시
+     별도 토큰으로 교체 필요. */
+.bds-icon:not(.bds-icon--colored) svg [fill]:not([fill="none"]):not([fill="white"]) {
   fill: currentColor;
 }
 
-/* 단색 stroke 아이콘 — stroke 속성도 currentColor로 강제 */
-.bds-icon:not(.bds-icon--colored) svg [stroke]:not([stroke="none"]) {
+/* 단색 stroke — fill과 동일 정책. white stroke는 hole 처리 의도로 보존. */
+.bds-icon:not(.bds-icon--colored) svg [stroke]:not([stroke="none"]):not([stroke="white"]) {
   stroke: currentColor;
 }
 
