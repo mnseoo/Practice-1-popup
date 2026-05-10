@@ -38,13 +38,13 @@ export function NoticeSubsidyScamPopup({
       </h2>
 
       <article className="mc-notice-popup__news">
-        <img
-          className="mc-notice-popup__news-thumb"
-          src={newspaperImg}
-          alt=""
-          width={size === "pc" ? 64 : 56}
-          height={size === "pc" ? 64 : 56}
-        />
+        <div className="mc-notice-popup__news-thumb-box" aria-hidden>
+          <img
+            className="mc-notice-popup__news-thumb"
+            src={newspaperImg}
+            alt=""
+          />
+        </div>
         <div className="mc-notice-popup__news-body">
           <time className="mc-notice-popup__news-date" dateTime="2026-04-05">
             2026.04.05

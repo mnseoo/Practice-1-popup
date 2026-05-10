@@ -54,15 +54,18 @@
   font-size: var(--font-title-3);    /* 24 */
 }
 
-/* ===== News card (썸네일 위, 텍스트 아래로 세로 stack) ===== */
+/* ===== News card (좌측 이미지 박스 + 우측 좌측정렬 텍스트) ===== */
 .mc-notice-popup__news {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: var(--spacing-12);
   padding: var(--spacing-16);
-  background: var(--background-alternative);
+  background: var(--background-default);
+  border: 1px solid var(--stroke-solid);
   border-radius: var(--radius-8);
+  box-shadow: var(--elevation-xs);
+  text-align: left;
 }
 
 .mc-notice-popup--mobile .mc-notice-popup__news {
@@ -70,25 +73,41 @@
   gap: var(--spacing-10);
 }
 
-.mc-notice-popup__news-thumb {
+.mc-notice-popup__news-thumb-box {
   flex-shrink: 0;
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  border-radius: var(--radius-4);
+  width: 72px;
+  height: 72px;
+  background: var(--gray-100);
+  border-radius: var(--radius-8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.mc-notice-popup--mobile .mc-notice-popup__news-thumb {
+.mc-notice-popup--mobile .mc-notice-popup__news-thumb-box {
   width: 64px;
   height: 64px;
 }
 
+.mc-notice-popup__news-thumb {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.mc-notice-popup--mobile .mc-notice-popup__news-thumb {
+  width: 48px;
+  height: 48px;
+}
+
 .mc-notice-popup__news-body {
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--spacing-4);
-  width: 100%;
+  text-align: left;
 }
 
 .mc-notice-popup__news-date {
@@ -105,6 +124,7 @@
   letter-spacing: 0;
   color: var(--label-900);
   line-height: var(--line-height-ratio);
+  text-align: left;
 }
 
 .mc-notice-popup--pc .mc-notice-popup__news-title {
@@ -124,31 +144,42 @@
   letter-spacing: 0;
 }
 
-/* ===== Body copy (마커 없는 paragraph 3개) ===== */
+/* ===== Body copy (위계: 일반은 약하게, 강조는 크게) ===== */
 .mc-notice-popup__bullets {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-8);
+  gap: var(--spacing-6);
 }
 
 .mc-notice-popup__bullet {
-  font-size: var(--font-body-1);     /* 16 */
-  font-weight: 500;
+  font-size: var(--font-body-2);    /* 14 — 일반: 작고 약하게 */
+  font-weight: 400;
   line-height: var(--line-height-ratio);
-  color: var(--label-800);
+  color: var(--label-600);
   letter-spacing: 0;
 }
 
 .mc-notice-popup--mobile .mc-notice-popup__bullet {
-  font-size: var(--font-body-2);     /* 14 */
+  font-size: var(--font-label-1);   /* 13 */
 }
 
+/* 강조 카피: 별도 alert 박스 (사이즈↑ + 색↑ + 분리) */
 .mc-notice-popup__bullet--alert {
-  color: var(--status-error);
+  margin-top: var(--spacing-4);
+  padding: var(--spacing-12) var(--spacing-16);
+  background: var(--status-error-bg);
+  border-radius: var(--radius-8);
+  font-size: var(--font-heading-2); /* 18 — 강조 */
   font-weight: 700;
+  color: var(--status-error);
+}
+
+.mc-notice-popup--mobile .mc-notice-popup__bullet--alert {
+  font-size: var(--font-body-1);    /* 16 */
+  padding: var(--spacing-10) var(--spacing-12);
 }
 
 /* ===== CTA ===== */

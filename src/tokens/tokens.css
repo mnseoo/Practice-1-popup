@@ -58,6 +58,10 @@
   --status-info: #1778f8;
   --status-warning: #ff9200;
 
+  /* ⚠️ semantic.json에 누락 — alert 박스 배경용 약한 톤. primitive red-100 직접 사용.
+     향후 semantic.statusStyle에 'error' 추가 시 정식 토큰으로 승격. */
+  --status-error-bg: #fff0f0;
+
   --static-white: #ffffff;
   --static-black: #000000;
   --material-dim: #11111166;
