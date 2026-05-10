@@ -23,6 +23,9 @@ const meta = {
   args: {
     size: "pc",
     showBackdrop: true,
+    onCtaClick: () => console.log("CTA clicked"),
+    onClose: () => console.log("close"),
+    onDontShowAgain: () => console.log("dont show again"),
   },
 } satisfies Meta<typeof NoticeSubsidyScamPopup>;
 
