@@ -5,6 +5,7 @@
 > **사용법**: 프로젝트 루트에서 이 폴더를 참조하세요. 프로젝트의 CLAUDE.md에 `디자인 시스템: ./design-system/` (또는 `~/design-system/`) 한 줄만 추가하면 본 문서가 자동 로딩됩니다.
 
 - **Source of Truth**: [Figma — Muchon Design System](https://www.figma.com/design/jnSV0A67mS3c17zHS1mwwh/Muchon-Design-System)
+- **Icon Source**:https://www.figma.com/design/jnSV0A67mS3c17zHS1mwwh/Muchon-Design-System?node-id=2861-20421&t=Lz7qcsjpILoFrPJ2-4
 
 ---
 

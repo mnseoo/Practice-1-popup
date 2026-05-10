@@ -28,7 +28,7 @@ const meta = {
     colored: { control: "boolean" },
   },
   args: {
-    name: ICON_NAMES.regular[0] ?? "down",
+    name: ICON_NAMES.regular[0] ?? "chevron-down",
     iconStyle: "regular",
     size: 24,
     colored: false,
@@ -129,7 +129,7 @@ export const Gallery: Story = {
 export const Sizes: Story = {
   parameters: { layout: "padded" },
   render: () => {
-    const sample = ICON_NAMES.regular[0] ?? ICON_NAMES.bold[0] ?? "down";
+    const sample = ICON_NAMES.regular[0] ?? ICON_NAMES.bold[0] ?? "chevron-down";
     const sizes: IconSize[] = [16, 18, 24];
     const styles: IconStyle[] = ["regular", "bold"];
 
@@ -173,7 +173,7 @@ export const Sizes: Story = {
 export const ColorProp: Story = {
   parameters: { layout: "padded" },
   render: () => {
-    const sample = ICON_NAMES.regular[0] ?? ICON_NAMES.bold[0] ?? "down";
+    const sample = ICON_NAMES.regular[0] ?? ICON_NAMES.bold[0] ?? "chevron-down";
     const colors = [
       { token: "label.900", value: "var(--label-900)" },
       { token: "brand.600", value: "var(--brand-600)" },
