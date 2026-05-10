@@ -46,17 +46,17 @@ const statusTokens: Swatch[] = [
 ];
 
 const brandTokens: Swatch[] = [
-  { token: "brand.50", cssVar: "--brand-50", value: "#f6faf9" },
-  { token: "brand.100", cssVar: "--brand-100", value: "#ecf9f6" },
-  { token: "brand.200", cssVar: "--brand-200", value: "#e2f8f2" },
-  { token: "brand.300", cssVar: "--brand-300", value: "#ccf2e9" },
-  { token: "brand.400", cssVar: "--brand-400", value: "#9ae5d2" },
-  { token: "brand.500", cssVar: "--brand-500", value: "#5acdb0" },
-  { token: "brand.600", cssVar: "--brand-600", value: "#02be8f", note: "Primary" },
-  { token: "brand.700", cssVar: "--brand-700", value: "#02ab81" },
-  { token: "brand.800", cssVar: "--brand-800", value: "#008363" },
-  { token: "brand.900", cssVar: "--brand-900", value: "#00523e" },
-  { token: "brand.950", cssVar: "--brand-950", value: "#00291f" },
+  { token: "brand.50", cssVar: "--brand-50", value: "#fbfcff" },
+  { token: "brand.100", cssVar: "--brand-100", value: "#eff5ff" },
+  { token: "brand.200", cssVar: "--brand-200", value: "#edf4ff" },
+  { token: "brand.300", cssVar: "--brand-300", value: "#cbe0ff" },
+  { token: "brand.400", cssVar: "--brand-400", value: "#93bbf7" },
+  { token: "brand.500", cssVar: "--brand-500", value: "#3d8bff" },
+  { token: "brand.600", cssVar: "--brand-600", value: "#006afe", note: "Primary" },
+  { token: "brand.700", cssVar: "--brand-700", value: "#0154c8" },
+  { token: "brand.800", cssVar: "--brand-800", value: "#033f92" },
+  { token: "brand.900", cssVar: "--brand-900", value: "#0e2f5c" },
+  { token: "brand.950", cssVar: "--brand-950", value: "#141b24" },
 ];
 
 function SwatchGrid({ title, items }: { title: string; items: Swatch[] }) {

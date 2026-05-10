@@ -62,17 +62,18 @@
   --static-black: #000000;
   --material-dim: #11111166;
 
-  --brand-50: #f6faf9;
-  --brand-100: #ecf9f6;
-  --brand-200: #e2f8f2;
-  --brand-300: #ccf2e9;
-  --brand-400: #9ae5d2;
-  --brand-500: #5acdb0;
-  --brand-600: #02be8f;
-  --brand-700: #02ab81;
-  --brand-800: #008363;
-  --brand-900: #00523e;
-  --brand-950: #00291f;
+  /* Brand: 무촌철거 (Brand/무촌철거.tokens.json) — Blue scale */
+  --brand-50: #fbfcff;
+  --brand-100: #eff5ff;
+  --brand-200: #edf4ff;
+  --brand-300: #cbe0ff;
+  --brand-400: #93bbf7;
+  --brand-500: #3d8bff;
+  --brand-600: #006afe;
+  --brand-700: #0154c8;
+  --brand-800: #033f92;
+  --brand-900: #0e2f5c;
+  --brand-950: #141b24;
 
   /* ============================================================ */
   /* Elevation (drop-shadow stacks)                                */

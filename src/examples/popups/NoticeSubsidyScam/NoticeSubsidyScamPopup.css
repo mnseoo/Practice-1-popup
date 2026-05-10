@@ -14,11 +14,13 @@
 .mc-notice-popup {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   background: var(--background-default);
   border-radius: var(--radius-12);
   box-shadow: var(--elevation-l);
   font-family: var(--font-family-base);
   color: var(--label-900);
+  text-align: center;        /* ★ 카드 전체 기본 가운데 정렬 */
   box-sizing: border-box;
 }
 
@@ -52,10 +54,11 @@
   font-size: var(--font-title-3);    /* 24 */
 }
 
-/* ===== News card ===== */
+/* ===== News card (썸네일 위, 텍스트 아래로 세로 stack) ===== */
 .mc-notice-popup__news {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   gap: var(--spacing-12);
   padding: var(--spacing-16);
   background: var(--background-alternative);
@@ -69,23 +72,23 @@
 
 .mc-notice-popup__news-thumb {
   flex-shrink: 0;
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   border-radius: var(--radius-4);
 }
 
 .mc-notice-popup--mobile .mc-notice-popup__news-thumb {
-  width: var(--spacing-56);
-  height: var(--spacing-56);
+  width: 64px;
+  height: 64px;
 }
 
 .mc-notice-popup__news-body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--spacing-4);
-  min-width: 0;
-  flex: 1;
+  width: 100%;
 }
 
 .mc-notice-popup__news-date {
@@ -121,7 +124,7 @@
   letter-spacing: 0;
 }
 
-/* ===== Bullets ===== */
+/* ===== Body copy (마커 없는 paragraph 3개) ===== */
 .mc-notice-popup__bullets {
   list-style: none;
   margin: 0;
@@ -132,22 +135,11 @@
 }
 
 .mc-notice-popup__bullet {
-  position: relative;
-  padding-left: var(--spacing-14);
   font-size: var(--font-body-1);     /* 16 */
   font-weight: 500;
   line-height: var(--line-height-ratio);
   color: var(--label-800);
   letter-spacing: 0;
-}
-
-.mc-notice-popup__bullet::before {
-  content: "•";
-  position: absolute;
-  left: var(--spacing-2);
-  top: 0;
-  color: var(--label-500);
-  font-weight: 700;
 }
 
 .mc-notice-popup--mobile .mc-notice-popup__bullet {
@@ -157,10 +149,6 @@
 .mc-notice-popup__bullet--alert {
   color: var(--status-error);
   font-weight: 700;
-}
-
-.mc-notice-popup__bullet--alert::before {
-  color: var(--status-error);
 }
 
 /* ===== CTA ===== */
