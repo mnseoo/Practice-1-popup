@@ -1,0 +1,85 @@
+{
+  "Badge": {
+    "Backround": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8999999761581421,
+          0.942105233669281,
+          1
+        ],
+        "alpha": 1,
+        "hex": "#E5F0FF"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2787:68851",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.codeSyntax": {
+          "WEB": "Label/Label"
+        },
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:2123ff635309d315a977860496940653abb3e325/-1:-1",
+          "targetVariableName": "Blue/100",
+          "targetVariableSetId": "VariableCollectionId:79acc39a48266525ff06539210f625abde004530/-1:-1",
+          "targetVariableSetName": "Primitive"
+        }
+      }
+    },
+    "Stock": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6980392336845398,
+          0.8235294222831726,
+          0.9921568632125854
+        ],
+        "alpha": 1,
+        "hex": "#B2D2FD"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2787:68852",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:d8f37df372771d3cfc56372838baf45c47b22a2b/-1:-1",
+          "targetVariableName": "Blue/300",
+          "targetVariableSetId": "VariableCollectionId:79acc39a48266525ff06539210f625abde004530/-1:-1",
+          "targetVariableSetName": "Primitive"
+        }
+      }
+    },
+    "Font": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.025188283994793892,
+          0.3742259442806244,
+          0.8348116874694824
+        ],
+        "alpha": 1,
+        "hex": "#065FD5"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2787:68853",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a5efac3449e24336d3d568c6d02dc60161c2cd85/-1:-1",
+          "targetVariableName": "Blue/600",
+          "targetVariableSetId": "VariableCollectionId:79acc39a48266525ff06539210f625abde004530/-1:-1",
+          "targetVariableSetName": "Primitive"
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Blue"
+  }
+}

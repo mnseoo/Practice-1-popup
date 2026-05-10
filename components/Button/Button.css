@@ -1,0 +1,209 @@
+.bds-button {
+  /* base */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: var(--radius-large);
+  font-family: var(--font-family-base);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease,
+    opacity 120ms ease;
+  box-sizing: border-box;
+}
+
+.bds-button:focus-visible {
+  outline: 2px solid var(--brand-600);
+  outline-offset: 2px;
+}
+
+.bds-button[disabled],
+.bds-button[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.bds-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ---------- Sizes ---------- */
+.bds-button--xs {
+  height: 28px;
+  padding: var(--spacing-5) var(--spacing-8);
+  gap: var(--radius-2);
+  font-size: var(--font-label-2);
+}
+.bds-button--xs .bds-button__icon {
+  width: var(--icon-16);
+  height: var(--icon-16);
+}
+
+.bds-button--s {
+  height: 32px;
+  padding: var(--spacing-5-5) var(--spacing-10);
+  gap: var(--spacing-4);
+  font-size: var(--font-body-2);
+}
+.bds-button--s .bds-button__icon {
+  width: var(--icon-16);
+  height: var(--icon-16);
+}
+
+.bds-button--m {
+  height: 36px;
+  padding: var(--spacing-7-5) var(--spacing-12);
+  gap: var(--spacing-4);
+  font-size: var(--font-body-2);
+}
+.bds-button--m .bds-button__icon {
+  width: var(--icon-16);
+  height: var(--icon-16);
+}
+
+.bds-button--l {
+  height: 40px;
+  padding: var(--spacing-9-5) var(--spacing-14);
+  gap: var(--spacing-4);
+  font-size: var(--font-body-2);
+}
+.bds-button--l .bds-button__icon {
+  width: var(--icon-16);
+  height: var(--icon-16);
+}
+
+.bds-button--xl {
+  height: 44px;
+  padding: var(--spacing-10) var(--spacing-16);
+  gap: var(--spacing-4);
+  font-size: var(--font-body-1);
+}
+.bds-button--xl .bds-button__icon {
+  width: var(--icon-18);
+  height: var(--icon-18);
+}
+
+.bds-button--2xl {
+  height: 48px;
+  padding: var(--spacing-12) var(--spacing-16);
+  gap: var(--spacing-4);
+  font-size: var(--font-body-1);
+}
+.bds-button--2xl .bds-button__icon {
+  width: var(--icon-18);
+  height: var(--icon-18);
+}
+
+.bds-button--3xl {
+  height: 52px;
+  padding: var(--spacing-14) var(--spacing-16);
+  gap: var(--spacing-4);
+  font-size: var(--font-body-1);
+}
+.bds-button--3xl .bds-button__icon {
+  width: var(--icon-18);
+  height: var(--icon-18);
+}
+
+.bds-button--4xl {
+  height: 58px;
+  padding: var(--spacing-14) var(--spacing-24);
+  gap: var(--spacing-6);
+  font-size: var(--font-heading-1);
+}
+.bds-button--4xl .bds-button__icon {
+  width: var(--icon-18);
+  height: var(--icon-18);
+}
+
+/* ---------- Variants ---------- */
+/* Solid Primary */
+.bds-button--solid-primary {
+  background-color: var(--brand-600);
+  color: var(--common-100);
+}
+.bds-button--solid-primary:hover:not([disabled]) {
+  background-color: var(--brand-700);
+}
+.bds-button--solid-primary:active:not([disabled]) {
+  background-color: var(--brand-800);
+}
+
+/* Solid Weak */
+.bds-button--solid-weak {
+  background-color: var(--gray-200);
+  color: var(--label-800);
+}
+.bds-button--solid-weak:hover:not([disabled]) {
+  background-color: var(--gray-300);
+}
+.bds-button--solid-weak:active:not([disabled]) {
+  background-color: var(--gray-400);
+}
+
+/* Line */
+.bds-button--line {
+  background-color: var(--common-100);
+  color: var(--label-900);
+  border: 1px solid var(--gray-300);
+}
+.bds-button--line:hover:not([disabled]) {
+  background-color: var(--gray-100);
+}
+.bds-button--line:active:not([disabled]) {
+  background-color: var(--gray-200);
+}
+
+/* Ghost */
+.bds-button--ghost {
+  background-color: transparent;
+  color: var(--label-900);
+}
+.bds-button--ghost:hover:not([disabled]) {
+  background-color: var(--gray-100);
+}
+.bds-button--ghost:active:not([disabled]) {
+  background-color: var(--gray-200);
+}
+
+/* Icon-only adjustment: square footprint */
+.bds-button--icon-only.bds-button--xs {
+  width: 28px;
+  padding: 0;
+}
+.bds-button--icon-only.bds-button--s {
+  width: 32px;
+  padding: 0;
+}
+.bds-button--icon-only.bds-button--m {
+  width: 36px;
+  padding: 0;
+}
+.bds-button--icon-only.bds-button--l {
+  width: 40px;
+  padding: 0;
+}
+.bds-button--icon-only.bds-button--xl {
+  width: 44px;
+  padding: 0;
+}
+.bds-button--icon-only.bds-button--2xl {
+  width: 48px;
+  padding: 0;
+}
+.bds-button--icon-only.bds-button--3xl {
+  width: 52px;
+  padding: 0;
+}
+.bds-button--icon-only.bds-button--4xl {
+  width: 58px;
+  padding: 0;
+}

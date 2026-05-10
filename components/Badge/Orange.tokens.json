@@ -1,0 +1,85 @@
+{
+  "Badge": {
+    "Backround": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9576923251152039,
+          0.8999999761581421
+        ],
+        "alpha": 1,
+        "hex": "#FFF4E5"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2787:68851",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.codeSyntax": {
+          "WEB": "Label/Label"
+        },
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:0a0ffdb455d0cc5c6d93f789ece9f57337e00d64/-1:-1",
+          "targetVariableName": "Orange/100",
+          "targetVariableSetId": "VariableCollectionId:79acc39a48266525ff06539210f625abde004530/-1:-1",
+          "targetVariableSetName": "Primitive"
+        }
+      }
+    },
+    "Stock": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.8705882430076599,
+          0.6980392336845398
+        ],
+        "alpha": 1,
+        "hex": "#FFDEB2"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2787:68852",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:bc313a36bb40391d9ce209bc5b44c350c25d78c4/-1:-1",
+          "targetVariableName": "Orange/300",
+          "targetVariableSetId": "VariableCollectionId:79acc39a48266525ff06539210f625abde004530/-1:-1",
+          "targetVariableSetName": "Primitive"
+        }
+      }
+    },
+    "Font": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8799999952316284,
+          0.5038431286811829,
+          0
+        ],
+        "alpha": 1,
+        "hex": "#E08000"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2787:68853",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:5c6bea956b27e7ebd726dc98bd5874181fe5123a/-1:-1",
+          "targetVariableName": "Orange/600",
+          "targetVariableSetId": "VariableCollectionId:79acc39a48266525ff06539210f625abde004530/-1:-1",
+          "targetVariableSetName": "Primitive"
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Orange"
+  }
+}

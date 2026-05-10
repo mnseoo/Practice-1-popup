@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "name": "Modal — Confirm Dialog",
+    "description": "2버튼 컨펌 다이얼로그. 사용자 확정/취소 분기가 필요한 액션에 사용.",
+    "createdAt": "2026-05-04",
+    "source": "Beorim 시안 4 디자인 작업 중 사용자 레퍼런스 채택"
+  },
+  "container": {
+    "width": 360,
+    "height": "hug",
+    "padding": 20,
+    "gap": 20,
+    "_paddingNote": "모달 카드 내부 padding 20 (전 4면). text block ↔ button row 사이 gap도 20",
+    "background": "{background.default}",
+    "borderRadius": 12
+  },
+  "buttonVariants": {
+    "_description": "1개 또는 2개 버튼 케이스. 같은 토큰, 버튼 row만 다름.",
+    "oneButton": {
+      "use": "사용자가 그저 인지하면 되는 알림 (분기 없음)",
+      "layout": "풀폭 확인 (Solid Primary, flex: 1 단독)",
+      "copy": "\"확인\""
+    },
+    "twoButton": {
+      "use": "확정/취소 분기 의미 있는 액션 (낙찰·삭제·등록 등)",
+      "layout": "취소(Line, fit-content) + 확인(Solid Primary, flex 1), gap 10, ratio 0.3/1",
+      "copy": "확인 버튼은 액션 동사 (\"낙찰하기\" / \"삭제하기\" 등)"
+    }
+  },
+  "backdrop": {
+    "position": "absolute",
+    "inset": "0",
+    "background": "rgba(17,17,17,0.4)",
+    "layout": "flex center",
+    "padding": "0 24px"
+  },
+  "textBlock": {
+    "gap": 6,
+    "title": {
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": 30,
+      "color": "{label.900}",
+      "textAlign": "left"
+    },
+    "description": {
+      "fontSize": 15,
+      "fontWeight": 400,
+      "lineHeight": 23,
+      "color": "{label.600}",
+      "textAlign": "left"
+    }
+  },
+  "buttonRow": {
+    "gap": 10,
+    "ratio": "0.3 / 1 (2버튼 케이스)",
+    "ratioReference": "button.json fab.mobile.layouts.twoFlexible_horizontal",
+    "buttonShared": {
+      "_referenceFile": "button.json — 2XL size",
+      "height": 48,
+      "paddingX": 16,
+      "paddingY": 12,
+      "borderRadius": 8,
+      "fontSize": 16,
+      "fontWeight": 600,
+      "lineHeight": 24,
+      "_note": "버튼은 Muchon 표준 2XL (height 48). 모달 카드의 내부 padding 20과는 별개"
+    },
+    "cancel": {
+      "variant": "Line",
+      "width": "fit-content",
+      "background": "{background.default}",
+      "border": "1px solid {stroke.solid}",
+      "textColor": "{label.900}"
+    },
+    "confirm": {
+      "variant": "Solid Primary",
+      "width": "flex: 1",
+      "background": "{brand.600}",
+      "textColor": "{static.white}",
+      "copyGuideline": "1버튼: '확인'. 2버튼: 액션 동사 ('낙찰하기' / '등록하기' / '삭제하기' 등)"
+    }
+  },
+  "_notes": {
+    "responsive": "자식 요소는 모두 width: 100% / flex: 1 기반. 카드 360w는 디자인 고정값(부모 백드롭이 좌우 24 padding으로 잘림 방지)",
+    "whenToUse": "단순 알림이 아닌 확정/취소 양자택일이 의미 있는 액션. 단일 버튼 알러트와 구분",
+    "examples": [
+      "낙찰 확정 (이전 시트 → 모달)",
+      "견적 취소 확인",
+      "후기 등록 (수정 불가 경고)",
+      "사진 5장 초과 시 기존 삭제 확인"
+    ]
+  }
+}

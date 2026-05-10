@@ -1,0 +1,215 @@
+{
+  "Brand-950": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0,
+        0.1599999964237213,
+        0.12091602385044098
+      ],
+      "alpha": 1,
+      "hex": "#00291F"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:2126:10474",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-900": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0,
+        0.3199999928474426,
+        0.24183204770088196
+      ],
+      "alpha": 1,
+      "hex": "#00523E"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:2439:9880",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-800": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0,
+        0.5137255191802979,
+        0.38823530077934265
+      ],
+      "alpha": 1,
+      "hex": "#008363"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8710",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-700": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.007843137718737125,
+        0.6705882549285889,
+        0.5058823823928833
+      ],
+      "alpha": 1,
+      "hex": "#02AB81"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8707",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-600": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.007843137718737125,
+        0.7450980544090271,
+        0.5607843399047852
+      ],
+      "alpha": 1,
+      "hex": "#02BE8F"
+    },
+    "$description": "Primary color - main 사용 컬러",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8704",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-500": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.3529411852359772,
+        0.8039215803146362,
+        0.6901960968971252
+      ],
+      "alpha": 1,
+      "hex": "#5ACDB0"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8701",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-400": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.6039215922355652,
+        0.8980392217636108,
+        0.8235294222831726
+      ],
+      "alpha": 1,
+      "hex": "#9AE5D2"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8698",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-300": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.800000011920929,
+        0.9490196108818054,
+        0.9137254953384399
+      ],
+      "alpha": 1,
+      "hex": "#CCF2E9"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8695",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-200": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.886274516582489,
+        0.9725490212440491,
+        0.9490196108818054
+      ],
+      "alpha": 1,
+      "hex": "#E2F8F2"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8691",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-100": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.9254902005195618,
+        0.9764705896377563,
+        0.9647058844566345
+      ],
+      "alpha": 1,
+      "hex": "#ECF9F6"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8690",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-50": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.9647058844566345,
+        0.9803921580314636,
+        0.9764705896377563
+      ],
+      "alpha": 1,
+      "hex": "#F6FAF9"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8689",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "버림"
+  }
+}

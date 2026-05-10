@@ -1,0 +1,85 @@
+{
+  "Badge": {
+    "Backround": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9399999976158142,
+          0.9399999976158142
+        ],
+        "alpha": 1,
+        "hex": "#FFF0F0"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2787:68851",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.codeSyntax": {
+          "WEB": "Label/Label"
+        },
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:38417af1f6a48fe7a93c673dcb9db20b6a175180/-1:-1",
+          "targetVariableName": "Red/100",
+          "targetVariableSetId": "VariableCollectionId:79acc39a48266525ff06539210f625abde004530/-1:-1",
+          "targetVariableSetName": "Primitive"
+        }
+      }
+    },
+    "Stock": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.8901960849761963,
+          0.8901960849761963
+        ],
+        "alpha": 1,
+        "hex": "#FFE3E3"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2787:68852",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:cbd806bebe9767190cd06d9b1e3ad5b2d601618f/-1:-1",
+          "targetVariableName": "Red/300",
+          "targetVariableSetId": "VariableCollectionId:79acc39a48266525ff06539210f625abde004530/-1:-1",
+          "targetVariableSetName": "Primitive"
+        }
+      }
+    },
+    "Font": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9599999785423279,
+          0,
+          0
+        ],
+        "alpha": 1,
+        "hex": "#F50000"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2787:68853",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:a475ef7e41b984d5abb9ddb4326cb5af926716c6/-1:-1",
+          "targetVariableName": "Red/600",
+          "targetVariableSetId": "VariableCollectionId:79acc39a48266525ff06539210f625abde004530/-1:-1",
+          "targetVariableSetName": "Primitive"
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Red"
+  }
+}

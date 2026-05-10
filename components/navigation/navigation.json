@@ -1,0 +1,192 @@
+{
+  "_meta": {
+    "source": "Figma - Muchon Design System",
+    "sourceUrl": "https://www.figma.com/design/jnSV0A67mS3c17zHS1mwwh/Muchon-Design-System?node-id=2871-19830",
+    "extractedAt": "2026-04-24",
+    "description": "Navigation Bar tokens for mobile only (Top + Bottom). Desktop variants excluded per scope. Top Nav has 3 OS variants (iOS/Android/Web) differing only in safe-area height; Bottom Nav has 2 platform variants (iOS/Android) with different paddings and label sizes."
+  },
+  "top": {
+    "_description": "Top navigation bar — sits at the top of mobile screens. Structure: Safe Area (status bar spacer) + Bar. The Bar has three sections: Left (icon/title/car-number), Center (optional label), Right (icon/label/button).",
+    "mobile": {
+      "width": 402,
+      "background": "{background.default}",
+      "barHeight": 54,
+      "barPaddingX": 20,
+      "sectionGap": 10,
+      "scrolledBackground": "{background.default}",
+      "osVariants": {
+        "_description": "Three OS variants differ only in Safe Area (status-bar spacer) height above the bar.",
+        "ios":     { "safeAreaHeight": 44 },
+        "android": { "safeAreaHeight": 36 },
+        "web":     { "safeAreaHeight": 0 }
+      },
+      "slots": {
+        "_description": "Each optional content slot available inside the bar.",
+        "leftIcon": {
+          "size": 24,
+          "role": "Back arrow / menu icon"
+        },
+        "leftLabel": {
+          "description": "Title text on left side (alternative to leftIcon). Supports optional count badge next to it.",
+          "fontSize": 22,
+          "fontSizeAlias": "title4",
+          "fontWeight": 600,
+          "color": "{label.900}",
+          "lineHeight": "1.125 (tight — non-standard)",
+          "gapWithCount": 8
+        },
+        "carNumber": {
+          "description": "Korean license plate style badge embedded in the Top Nav left slot. Used for car-related screens.",
+          "outer":  { "background": "{static.white}", "padding": 2, "borderRadius": 6 },
+          "inner":  { "background": "{static.white}", "border": "2px solid {label.900}", "borderRadius": 4, "paddingX": 8, "gap": 8 },
+          "label":  { "fontSize": 24, "fontWeight": 600, "color": "{label.900}" },
+          "divider":{ "width": 2, "height": 38, "color": "{label.900}" }
+        },
+        "centerLabel": {
+          "description": "Optional centered title text.",
+          "fontSize": 16,
+          "fontWeight": 600,
+          "color": "{label.900}",
+          "lineHeight": 24,
+          "letterSpacing": 0.15
+        },
+        "rightIcon": {
+          "size": 24,
+          "role": "Cancel / overflow / secondary action"
+        },
+        "rightLabel": {
+          "description": "Text link on the right (e.g. '완료', '편집').",
+          "fontSize": 20,
+          "fontWeight": 500,
+          "color": "{label.900}",
+          "lineHeight": 22,
+          "letterSpacing": -0.24,
+          "textAlign": "right"
+        },
+        "rightButton": {
+          "description": "Compact Primary pill button on the right. Smaller than the standalone Button S variant.",
+          "background": "{brand.600}",
+          "paddingX": 10,
+          "paddingY": 8,
+          "gap": 4,
+          "borderRadius": 8,
+          "label": {
+            "fontSize": 15,
+            "fontWeight": 600,
+            "color": "{static.white}",
+            "lineHeight": 20,
+            "letterSpacing": -0.23
+          }
+        }
+      }
+    },
+    "resource": {
+      "_description": "Atomic building blocks used inside Top Nav layouts.",
+      "tap": {
+        "description": "Large tabbed title text used in segmented-title headers (e.g. '상품 | 리뷰 | 문의' row). Bold 24px. Selected draws darker gray.",
+        "fontSize": 24,
+        "fontSizeAlias": "title3",
+        "fontWeight": 700,
+        "padding": 2,
+        "states": {
+          "unselected": { "color": "{label.400}" },
+          "selected":   { "color": "{gray.700}", "note": "Uses primitive gray.700 (#4b4b4b) because semantic.label has no 700 entry." }
+        }
+      },
+      "title": {
+        "_description": "Page-title block at 3 sizes — used as a top-of-screen title (often below the bar).",
+        "L": { "fontSize": 24, "fontSizeAlias": "title3",   "fontWeight": 700, "color": "{label.900}" },
+        "M": { "fontSize": 20, "fontSizeAlias": "heading1", "fontWeight": 700, "color": "{label.900}" },
+        "S": { "fontSize": 18, "fontSizeAlias": "heading2", "fontWeight": 700, "color": "{label.900}" }
+      }
+    }
+  },
+  "bottom": {
+    "_description": "Bottom tab navigation — sits at the bottom of mobile screens. Contains 3 tabs (icon + label) + system nav bar spacer. iOS and Android differ in tab paddings and label size.",
+    "shared": {
+      "width": 402,
+      "background": "{background.default}",
+      "shadow": {
+        "_description": "Top-edge soft shadow lifting the bar off the content.",
+        "offsetX": 0,
+        "offsetY": -1,
+        "blur": 12,
+        "spread": 0,
+        "color": "rgba(17, 17, 17, 0.06)"
+      },
+      "tabIconSize": 24,
+      "tabCount": 3,
+      "tabFlex": "each tab gets flex-1 0 0 (equal width)"
+    },
+    "platformVariants": {
+      "ios": {
+        "containerPaddingTop": 4,
+        "tabPaddingY": 4,
+        "tabContentGap": 1,
+        "labelFontSize": 11,
+        "labelFontSizeAlias": "mobile.11.medium",
+        "labelFontWeight": 500,
+        "systemNavBarHeight": 34,
+        "systemNavBarDescription": "iOS home indicator area"
+      },
+      "android": {
+        "containerPaddingTop": 0,
+        "tabPaddingY": 9,
+        "tabContentGap": 4,
+        "labelFontSize": 12,
+        "labelFontSizeAlias": "mobile.12.medium",
+        "labelFontWeight": 500,
+        "systemNavBarHeight": 24,
+        "systemNavBarDescription": "Android gesture bar"
+      }
+    },
+    "tabColors": {
+      "active":   { "text": "{label.900}", "icon": "{label.900}" },
+      "inactive": { "text": "{label.400}", "icon": "{label.400}" }
+    },
+    "resource": {
+      "tab": {
+        "_description": "Individual tab cell — building block of Bottom Nav. Includes optional badge slot (top-right dot).",
+        "iconSize": 24,
+        "width": 24,
+        "badge": {
+          "description": "Small red notification dot.",
+          "size": 4,
+          "color": "{status.error}",
+          "positionIOS":     { "offsetX": 11.5, "offsetY": -19 },
+          "positionAndroid": { "offsetX": 11.5, "offsetY": -22 }
+        },
+        "ios": {
+          "paddingY": 4,
+          "gap": 1,
+          "fontSize": 11,
+          "fontWeight": 500,
+          "active":   { "color": "{label.900}" },
+          "inactive": { "color": "{label.400}" }
+        },
+        "android": {
+          "paddingY": 9,
+          "gap": 4,
+          "fontSize": 12,
+          "fontWeight": 500,
+          "active":   { "color": "{label.900}" },
+          "inactive": { "color": "{label.400}" }
+        }
+      }
+    }
+  },
+  "_notes": {
+    "scope": [
+      "Top Nav: mobile only (iOS, Android, Web OS variants). Desktop Top Nav (Size L/M/S/XS) excluded per request.",
+      "Bottom Nav: mobile only (iOS, Android platform variants). No desktop equivalent in the Figma source.",
+      "The 'Bottom Button' (757x64 Size L) in the Figma 'Bottom Navigation' section was not extracted — it's a wide CTA-bar unrelated to the tab-navigation scope of this request."
+    ],
+    "design_quirks": [
+      "leftLabel uses lineHeight 1.125 (tighter than the 1.5 system default). Preserve when rendering.",
+      "rightLabel, centerLabel, and rightButton.label use non-zero letterSpacing (0.15, -0.23, -0.24) — these override the typography system's default 0.",
+      "Tap resource 'selected' color is primitive gray.700 (#4b4b4b), because semantic.label intentionally skips the 700 step. This is the only known reference to a primitive gray from the nav components.",
+      "The embedded Bottom Nav tabs in the full Bottom Navigation component use label color #333 (gray.800) for the active state, while the standalone Bottom Nav/Resource/Tab uses {label.900} (#111). The Resource values (label.900 / label.400) are the canonical tokens — treat the nav-bar aggregate as slightly stale and follow the Resource values when designing."
+    ],
+    "token_references": "Values like {background.default}, {label.900}, {label.400}, {gray.700}, {brand.600}, {static.white}, {status.error} resolve against ~/design-system/colors/*.json. Font aliases (title4, title3, heading1, heading2, mobile.11.medium, mobile.12.medium) resolve against ~/design-system/typography/typography.json."
+  }
+}

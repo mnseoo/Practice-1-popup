@@ -1,0 +1,85 @@
+{
+  "Badge": {
+    "Backround": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9254902005195618,
+          0.9764705896377563,
+          0.9647058844566345
+        ],
+        "alpha": 1,
+        "hex": "#ECF9F6"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2787:68851",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.codeSyntax": {
+          "WEB": "Label/Label"
+        },
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:174c46c0ca8e9812d43350600afd0d617f5b3d05/-1:-1",
+          "targetVariableName": "Brand-100",
+          "targetVariableSetId": "VariableCollectionId:1f60202c4f82a92e4883a0de08178b040a138197/-1:-1",
+          "targetVariableSetName": "Brand"
+        }
+      }
+    },
+    "Stock": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.6039215922355652,
+          0.8980392217636108,
+          0.8235294222831726
+        ],
+        "alpha": 1,
+        "hex": "#9AE5D2"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2787:68852",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:ad756d0e389f3a248fa3d07b6abc41c71ccdfc9f/-1:-1",
+          "targetVariableName": "Brand-400",
+          "targetVariableSetId": "VariableCollectionId:1f60202c4f82a92e4883a0de08178b040a138197/-1:-1",
+          "targetVariableSetName": "Brand"
+        }
+      }
+    },
+    "Font": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.007843137718737125,
+          0.6705882549285889,
+          0.5058823823928833
+        ],
+        "alpha": 1,
+        "hex": "#02AB81"
+      },
+      "$extensions": {
+        "com.figma.variableId": "VariableID:2787:68853",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.aliasData": {
+          "targetVariableId": "VariableID:4ce578e5737f594153d4712d22a4a27c4d047e5e/-1:-1",
+          "targetVariableName": "Brand-700",
+          "targetVariableSetId": "VariableCollectionId:1f60202c4f82a92e4883a0de08178b040a138197/-1:-1",
+          "targetVariableSetName": "Brand"
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Brand"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "_meta": {
+    "source": "Figma - Muchon Design System",
+    "sourceUrl": "https://www.figma.com/design/jnSV0A67mS3c17zHS1mwwh/Muchon-Design-System?node-id=3832-192",
+    "extractedAt": "2026-04-24",
+    "description": "Typography tokens split into mobile and desktop scales. Both use Pretendard with 150% line-height and 0 letter-spacing — values below are pre-computed in px. In Figma, desktop tokens are wired to shared variables; here we just record both scales as independent token sets."
+  },
+  "fontFamily": "Pretendard",
+  "fontWeight": {
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700,
+    "extrabold": 800
+  },
+  "constants": {
+    "lineHeightRatio": 1.5,
+    "letterSpacing": 0,
+    "unit": "px"
+  },
+  "semanticAliases": {
+    "_description": "Size aliases from Figma font variables — shared between mobile and desktop where sizes overlap.",
+    "title1": 36,
+    "title2": 32,
+    "title3": 24,
+    "title4": 22,
+    "heading1": 20,
+    "heading2": 18,
+    "body1": 16,
+    "body2": 14,
+    "label1": 13,
+    "label2": 12
+  },
+  "mobile": {
+    "_description": "Mobile scale: 10-36px. Use these on mobile viewports.",
+    "36": {
+      "bold":     { "fontSize": 36, "fontWeight": 700, "lineHeight": 54, "letterSpacing": 0 },
+      "semibold": { "fontSize": 36, "fontWeight": 600, "lineHeight": 54, "letterSpacing": 0 },
+      "medium":   { "fontSize": 36, "fontWeight": 500, "lineHeight": 54, "letterSpacing": 0 }
+    },
+    "32": {
+      "bold":     { "fontSize": 32, "fontWeight": 700, "lineHeight": 48, "letterSpacing": 0 },
+      "semibold": { "fontSize": 32, "fontWeight": 600, "lineHeight": 48, "letterSpacing": 0 },
+      "medium":   { "fontSize": 32, "fontWeight": 500, "lineHeight": 48, "letterSpacing": 0 }
+    },
+    "28": {
+      "bold":     { "fontSize": 28, "fontWeight": 700, "lineHeight": 42, "letterSpacing": 0 },
+      "semibold": { "fontSize": 28, "fontWeight": 600, "lineHeight": 42, "letterSpacing": 0 },
+      "medium":   { "fontSize": 28, "fontWeight": 500, "lineHeight": 42, "letterSpacing": 0 }
+    },
+    "24": {
+      "bold":     { "fontSize": 24, "fontWeight": 700, "lineHeight": 36, "letterSpacing": 0 },
+      "semibold": { "fontSize": 24, "fontWeight": 600, "lineHeight": 36, "letterSpacing": 0 },
+      "medium":   { "fontSize": 24, "fontWeight": 500, "lineHeight": 36, "letterSpacing": 0 }
+    },
+    "22": {
+      "extrabold": { "fontSize": 22, "fontWeight": 800, "lineHeight": 33, "letterSpacing": 0 },
+      "bold":      { "fontSize": 22, "fontWeight": 700, "lineHeight": 33, "letterSpacing": 0 },
+      "semibold":  { "fontSize": 22, "fontWeight": 600, "lineHeight": 33, "letterSpacing": 0 },
+      "medium":    { "fontSize": 22, "fontWeight": 500, "lineHeight": 33, "letterSpacing": 0 }
+    },
+    "20": {
+      "bold":     { "fontSize": 20, "fontWeight": 700, "lineHeight": 30, "letterSpacing": 0 },
+      "semibold": { "fontSize": 20, "fontWeight": 600, "lineHeight": 30, "letterSpacing": 0 },
+      "medium":   { "fontSize": 20, "fontWeight": 500, "lineHeight": 30, "letterSpacing": 0 },
+      "regular":  { "fontSize": 20, "fontWeight": 400, "lineHeight": 30, "letterSpacing": 0 }
+    },
+    "18": {
+      "bold":     { "fontSize": 18, "fontWeight": 700, "lineHeight": 27, "letterSpacing": 0 },
+      "semibold": { "fontSize": 18, "fontWeight": 600, "lineHeight": 27, "letterSpacing": 0 },
+      "medium":   { "fontSize": 18, "fontWeight": 500, "lineHeight": 27, "letterSpacing": 0 }
+    },
+    "16": {
+      "bold":     { "fontSize": 16, "fontWeight": 700, "lineHeight": 24, "letterSpacing": 0 },
+      "semibold": { "fontSize": 16, "fontWeight": 600, "lineHeight": 24, "letterSpacing": 0 },
+      "medium":   { "fontSize": 16, "fontWeight": 500, "lineHeight": 24, "letterSpacing": 0 },
+      "regular":  { "fontSize": 16, "fontWeight": 400, "lineHeight": 24, "letterSpacing": 0 }
+    },
+    "15": {
+      "extrabold": { "fontSize": 15, "fontWeight": 800, "lineHeight": 22.5, "letterSpacing": 0 },
+      "bold":      { "fontSize": 15, "fontWeight": 700, "lineHeight": 22.5, "letterSpacing": 0 },
+      "semibold":  { "fontSize": 15, "fontWeight": 600, "lineHeight": 22.5, "letterSpacing": 0 },
+      "medium":    { "fontSize": 15, "fontWeight": 500, "lineHeight": 22.5, "letterSpacing": 0 },
+      "regular":   { "fontSize": 15, "fontWeight": 400, "lineHeight": 22.5, "letterSpacing": 0 }
+    },
+    "14": {
+      "extrabold": { "fontSize": 14, "fontWeight": 800, "lineHeight": 21, "letterSpacing": 0 },
+      "bold":      { "fontSize": 14, "fontWeight": 700, "lineHeight": 21, "letterSpacing": 0 },
+      "semibold":  { "fontSize": 14, "fontWeight": 600, "lineHeight": 21, "letterSpacing": 0 },
+      "medium":    { "fontSize": 14, "fontWeight": 500, "lineHeight": 21, "letterSpacing": 0 },
+      "regular":   { "fontSize": 14, "fontWeight": 400, "lineHeight": 21, "letterSpacing": 0 }
+    },
+    "13": {
+      "bold":     { "fontSize": 13, "fontWeight": 700, "lineHeight": 19.5, "letterSpacing": 0 },
+      "semibold": { "fontSize": 13, "fontWeight": 600, "lineHeight": 19.5, "letterSpacing": 0 },
+      "medium":   { "fontSize": 13, "fontWeight": 500, "lineHeight": 19.5, "letterSpacing": 0 },
+      "regular":  { "fontSize": 13, "fontWeight": 400, "lineHeight": 19.5, "letterSpacing": 0 }
+    },
+    "12": {
+      "semibold": { "fontSize": 12, "fontWeight": 600, "lineHeight": 18, "letterSpacing": 0 },
+      "medium":   { "fontSize": 12, "fontWeight": 500, "lineHeight": 18, "letterSpacing": 0 },
+      "regular":  { "fontSize": 12, "fontWeight": 400, "lineHeight": 18, "letterSpacing": 0 }
+    },
+    "11": {
+      "semibold": { "fontSize": 11, "fontWeight": 600, "lineHeight": 16.5, "letterSpacing": 0 },
+      "medium":   { "fontSize": 11, "fontWeight": 500, "lineHeight": 16.5, "letterSpacing": 0 },
+      "regular":  { "fontSize": 11, "fontWeight": 400, "lineHeight": 16.5, "letterSpacing": 0 }
+    },
+    "10": {
+      "medium":   { "fontSize": 10, "fontWeight": 500, "lineHeight": 15, "letterSpacing": 0 }
+    }
+  },
+  "desktop": {
+    "_description": "Desktop scale: 14-64px. Extends mobile with larger display sizes (40-64). Some sizes have a reduced weight set — see _notes.",
+    "64": {
+      "bold":     { "fontSize": 64, "fontWeight": 700, "lineHeight": 96, "letterSpacing": 0 },
+      "semibold": { "fontSize": 64, "fontWeight": 600, "lineHeight": 96, "letterSpacing": 0 }
+    },
+    "56": {
+      "bold":     { "fontSize": 56, "fontWeight": 700, "lineHeight": 84, "letterSpacing": 0 },
+      "semibold": { "fontSize": 56, "fontWeight": 600, "lineHeight": 84, "letterSpacing": 0 }
+    },
+    "48": {
+      "bold":     { "fontSize": 48, "fontWeight": 700, "lineHeight": 72, "letterSpacing": 0 },
+      "semibold": { "fontSize": 48, "fontWeight": 600, "lineHeight": 72, "letterSpacing": 0 },
+      "medium":   { "fontSize": 48, "fontWeight": 500, "lineHeight": 72, "letterSpacing": 0 }
+    },
+    "40": {
+      "bold":     { "fontSize": 40, "fontWeight": 700, "lineHeight": 60, "letterSpacing": 0 },
+      "semibold": { "fontSize": 40, "fontWeight": 600, "lineHeight": 60, "letterSpacing": 0 },
+      "medium":   { "fontSize": 40, "fontWeight": 500, "lineHeight": 60, "letterSpacing": 0 }
+    },
+    "32": {
+      "bold":     { "fontSize": 32, "fontWeight": 700, "lineHeight": 48, "letterSpacing": 0 },
+      "semibold": { "fontSize": 32, "fontWeight": 600, "lineHeight": 48, "letterSpacing": 0 },
+      "medium":   { "fontSize": 32, "fontWeight": 500, "lineHeight": 48, "letterSpacing": 0 },
+      "regular":  { "fontSize": 32, "fontWeight": 400, "lineHeight": 48, "letterSpacing": 0 }
+    },
+    "24": {
+      "bold":     { "fontSize": 24, "fontWeight": 700, "lineHeight": 36, "letterSpacing": 0 },
+      "semibold": { "fontSize": 24, "fontWeight": 600, "lineHeight": 36, "letterSpacing": 0 },
+      "medium":   { "fontSize": 24, "fontWeight": 500, "lineHeight": 36, "letterSpacing": 0 }
+    },
+    "20": {
+      "semibold": { "fontSize": 20, "fontWeight": 600, "lineHeight": 30, "letterSpacing": 0 },
+      "medium":   { "fontSize": 20, "fontWeight": 500, "lineHeight": 30, "letterSpacing": 0 },
+      "regular":  { "fontSize": 20, "fontWeight": 400, "lineHeight": 30, "letterSpacing": 0 }
+    },
+    "18": {
+      "semibold": { "fontSize": 18, "fontWeight": 600, "lineHeight": 27, "letterSpacing": 0 },
+      "medium":   { "fontSize": 18, "fontWeight": 500, "lineHeight": 27, "letterSpacing": 0 },
+      "regular":  { "fontSize": 18, "fontWeight": 400, "lineHeight": 27, "letterSpacing": 0 }
+    },
+    "16": {
+      "semibold": { "fontSize": 16, "fontWeight": 600, "lineHeight": 24, "letterSpacing": 0 },
+      "medium":   { "fontSize": 16, "fontWeight": 500, "lineHeight": 24, "letterSpacing": 0 },
+      "regular":  { "fontSize": 16, "fontWeight": 400, "lineHeight": 24, "letterSpacing": 0 }
+    },
+    "14": {
+      "semibold": { "fontSize": 14, "fontWeight": 600, "lineHeight": 21, "letterSpacing": 0 },
+      "medium":   { "fontSize": 14, "fontWeight": 500, "lineHeight": 21, "letterSpacing": 0 },
+      "regular":  { "fontSize": 14, "fontWeight": 400, "lineHeight": 21, "letterSpacing": 0 }
+    }
+  },
+  "_notes": {
+    "figma_typos": [
+      "Mobile 24/SeBold and Desktop 48/SeBold in Figma are typos of 'SemiBold' (weight 600). Normalized here as 'semibold'.",
+      "Desktop 18 sample layer names in Figma are mislabeled as '14/Medium' and '14/Regular' — the display labels confirm they are actually 18 sizes. Stored under '18' here."
+    ],
+    "weight_gaps": {
+      "desktop_64_56": "No Medium weight — only Bold and SemiBold.",
+      "desktop_20": "No Bold — only SemiBold, Medium, Regular.",
+      "mobile_12_to_10": "Sizes 12 and below drop Bold — top weight is SemiBold.",
+      "mobile_10": "Only Medium is defined."
+    },
+    "extensions": {
+      "_description": "Weights extended beyond the original Figma source for project needs. Source files: Muchon Cheolgeo popup_D / popup_D-1 — heavy display weights (Bold/ExtraBold) on small mobile sizes for emphasis copy.",
+      "added_2026-05-06": [
+        "fontWeight.extrabold (800) added globally — Pretendard ExtraBold.",
+        "mobile.22.extrabold (22/800) — high-emphasis modal title.",
+        "mobile.16.bold (16/700) — primary CTA at 2XL button size.",
+        "mobile.15.bold (15/700) — emphasis body copy / secondary CTA.",
+        "mobile.15.extrabold (15/800) — inline emphasized fragments inside body copy.",
+        "mobile.14.bold (14/700) — compact CTA inside nav / dense surfaces.",
+        "mobile.14.extrabold (14/800) — news / card heading at compact size.",
+        "mobile.13.bold (13/700) — small label at bold weight (warnings, FAB labels)."
+      ]
+    }
+  }
+}

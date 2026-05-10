@@ -1,0 +1,215 @@
+{
+  "Brand-950": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.0784313753247261,
+        0.10457516461610794,
+        0.1411764770746231
+      ],
+      "alpha": 1,
+      "hex": "#141B24"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:2126:10474",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-900": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.05622297152876854,
+        0.1825457513332367,
+        0.3590933084487915
+      ],
+      "alpha": 1,
+      "hex": "#0E2F5C"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:2439:9880",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-800": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.012416538782417774,
+        0.24674266576766968,
+        0.5742346048355103
+      ],
+      "alpha": 1,
+      "hex": "#033F92"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8710",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-700": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.005062664858996868,
+        0.329786092042923,
+        0.7831735014915466
+      ],
+      "alpha": 1,
+      "hex": "#0154C8"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8707",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-600": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0,
+        0.4156862795352936,
+        0.9960784316062927
+      ],
+      "alpha": 1,
+      "hex": "#006AFE"
+    },
+    "$description": "Primary color - main 사용 컬러",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8704",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-500": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.239215686917305,
+        0.545098066329956,
+        1
+      ],
+      "alpha": 1,
+      "hex": "#3D8BFF"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8701",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-400": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.5763120651245117,
+        0.7328555583953857,
+        0.9676707983016968
+      ],
+      "alpha": 1,
+      "hex": "#93BBF7"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8698",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-300": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.7960784435272217,
+        0.8776470422744751,
+        1
+      ],
+      "alpha": 1,
+      "hex": "#CBE0FF"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8695",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-200": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.929411768913269,
+        0.955294132232666,
+        1
+      ],
+      "alpha": 1,
+      "hex": "#EDF4FF"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8691",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-100": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.9375938773155212,
+        0.9604761004447937,
+        1
+      ],
+      "alpha": 1,
+      "hex": "#EFF5FF"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8690",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "Brand-50": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.9823735356330872,
+        0.9887441396713257,
+        0.9997478723526001
+      ],
+      "alpha": 1,
+      "hex": "#FBFCFF"
+    },
+    "$extensions": {
+      "com.figma.variableId": "VariableID:1749:8689",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ]
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "무촌철거"
+  }
+}

@@ -1,0 +1,114 @@
+              {
+  "_meta": {
+    "source": "Figma - Muchon Design System",
+    "sourceUrl": "https://www.figma.com/design/jnSV0A67mS3c17zHS1mwwh/Muchon-Design-System?node-id=3097-4293",
+    "extractedAt": "2026-04-24",
+    "description": "Semantic color tokens — use these in UI, not primitives. Each token expresses intent (what it's for), not raw color."
+  },
+  "label": {
+    "_description": "Text / icon colors by emphasis. 700 is intentionally omitted.",
+    "300": "#e5e5e5",
+    "400": "#c5c5c5",
+    "500": "#9e9e9e",
+    "600": "#686868",
+    "800": "#333333",
+    "900": "#111111"
+  },
+  "background": {
+    "_description": "Surface colors. 'translucent70' uses 70% alpha white; 'elevated' is a subtle tint for raised surfaces.",
+    "default": "#ffffff",
+    "alternative": "#f5f5f5",
+    "translucent70": "#ffffffb2",
+    "elevated": "#1111110a"
+  },
+  "stroke": {
+    "_description": "Border / divider colors.",
+    "solid": "#e5e5e5",
+    "translucent": "#1111110f"
+  },
+  "status": {
+    "_description": "State colors for feedback (errors, success, info, warnings).",
+    "error": "#ff4242",
+    "success": "#00cc44",
+    "info": "#1778f8",
+    "warning": "#ff9200"
+  },
+  "statusStyle": {
+    "_description": "Tag / badge style variants tied to status semantics (separate from the Status group in Figma under 'Status - Style').",
+    "designOnly": "#e5f0ff",
+    "default": "#f6f2fd",
+    "resource": "#dadfe7"
+  },
+  "static": {
+    "_description": "Colors that don't flip with light/dark mode.",
+    "white": "#ffffff",
+    "black": "#000000"
+  },
+  "material": {
+    "_description": "Overlay / scrim colors.",
+    "dim": "#11111133"
+  },
+  "badge": {
+    "_description": "Badge component tokens: background (pill fill), stock (stroke/divider), font (text).",
+    "background": "#f0f2f5",
+    "stock": "#dadfe7",
+    "font": "#5b6e8d"
+  },
+  "brand": {
+    "_description": "Muchon brand green palette. Primary brand color is 600.",
+    "50": "#f6faf9",
+    "100": "#ecf9f6",
+    "200": "#e2f8f2",
+    "300": "#ccf2e9",
+    "400": "#9ae5d2",
+    "500": "#5acdb0",
+    "600": "#02be8f",
+    "700": "#02ab81",
+    "800": "#008363",
+    "900": "#00523e",
+    "950": "#00291f"
+  },
+  "elevation": {
+    "_description": "Drop shadow scales for raised surfaces. L and XL are composed of multiple stacked shadows.",
+    "xxs": {
+      "type": "drop-shadow",
+      "layers": [
+        { "color": "#00000008", "offsetX": 0, "offsetY": 1, "blur": 2, "spread": 0 }
+      ]
+    },
+    "xs": {
+      "type": "drop-shadow",
+      "layers": [
+        { "color": "#0000000a", "offsetX": 0, "offsetY": 1, "blur": 4, "spread": 0 }
+      ]
+    },
+    "s": {
+      "type": "drop-shadow",
+      "layers": [
+        { "color": "#00000014", "offsetX": 0, "offsetY": 1, "blur": 6, "spread": 0 }
+      ]
+    },
+    "l": {
+      "type": "drop-shadow",
+      "layers": [
+        { "color": "#11111105", "offsetX": 0, "offsetY": 20, "blur": 50, "spread": 0 },
+        { "color": "#1111110d", "offsetX": 0, "offsetY": 10, "blur": 40, "spread": 0 },
+        { "color": "#1111110d", "offsetX": 0, "offsetY": 0, "blur": 4, "spread": 1 },
+        { "color": "#00000005", "offsetX": 2, "offsetY": 70, "blur": 80, "spread": 0 }
+      ]
+    },
+    "xl": {
+      "type": "drop-shadow",
+      "layers": [
+        { "color": "#1111110f", "offsetX": 0, "offsetY": 20, "blur": 50, "spread": 0 },
+        { "color": "#11111114", "offsetX": 0, "offsetY": 10, "blur": 40, "spread": 0 },
+        { "color": "#1111110d", "offsetX": 0, "offsetY": 0, "blur": 4, "spread": 1 },
+        { "color": "#0000000a", "offsetX": 2, "offsetY": 70, "blur": 80, "spread": 0 }
+      ]
+    }
+  },
+  "blur": {
+    "_description": "Background blur effect.",
+    "20": { "type": "background-blur", "radius": 20 }
+  }
+}

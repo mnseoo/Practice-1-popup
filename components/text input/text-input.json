@@ -1,0 +1,270 @@
+{
+  "_meta": {
+    "source": "Figma - Muchon Design System",
+    "sourceUrl": "https://www.figma.com/design/jnSV0A67mS3c17zHS1mwwh/Muchon-Design-System?node-id=2871-21697",
+    "extractedAt": "2026-04-24",
+    "description": "Text input family: TextField (Box + Line types) and TextArea (Box only). TextField/Box/Hero excluded per request. All use Pretendard Medium with 1.5 line-height. States: Enabled, Hover, Focused, Typing, Filled, Error, Disabled — coverage varies per variant (see each block)."
+  },
+  "shared": {
+    "fontFamily": "Pretendard",
+    "inputFontWeight": 500,
+    "lineHeightRatio": 1.5,
+    "borderRadius": 8,
+    "borderWidth": 1,
+    "borderStyle": "solid"
+  },
+  "textField": {
+    "_description": "Single-line text input. Two visual types — Box (bordered rectangle) and Line (underline-only). Box has sub-variants Box (standard) and Big (larger font for numeric/money input). Line has sub-variants Line (standard) and Big (very large display input).",
+    "box": {
+      "box": {
+        "_description": "Standard bordered text field. Used in forms inside modals, bottom sheets, or complex input pages.",
+        "sizes": {
+          "M": {
+            "inputHeight": 48,
+            "paddingX": 16,
+            "paddingY": 12,
+            "inputFontSize": 16,
+            "inputFontSizeAlias": "body1"
+          },
+          "S": {
+            "inputHeight": 40,
+            "paddingX": 14,
+            "paddingY": 8,
+            "inputFontSize": 16,
+            "inputFontSizeAlias": "body1"
+          }
+        },
+        "gapLabelToInput": 6,
+        "gapInputToDescription": 4,
+        "states": {
+          "enabled":  { "background": "{background.default}", "border": "{label.300}", "placeholder": "{label.500}", "text": "{label.900}" },
+          "hover":    { "_note": "Not extracted in this session — Figma has a Hover variant; defaults likely close to Enabled with slightly darker border. Verify before using." },
+          "focused":  { "background": "{background.default}", "border": "{label.800}", "placeholder": "{label.500}", "cursor": "{gray.700}", "cursorHeight": 16, "cursorWidth": 1 },
+          "typing":   { "background": "{background.default}", "border": "{label.800}", "placeholder": "{label.400}", "text": "{label.900}", "cursor": "{brand.600}", "cursorHeight": 16, "cursorWidth": 1 },
+          "filled":   { "background": "{background.default}", "border": "{label.300}", "text": "{label.900}" },
+          "error":    { "background": "{background.default}", "border": "{status.error}", "placeholder": "{label.400}", "descriptionColor": "{status.error}" },
+          "disabled": { "background": "{background.alternative}", "border": "{label.300}", "placeholder": "{label.400}" }
+        },
+        "optionalSlots": {
+          "label": "Uses Resource/Label — Asterisk/Negative variants. In Error state, the Label switches to the Negative=True variant automatically (red text).",
+          "rightIcon": { "size": 18, "role": "clear / action" },
+          "unit": { "description": "Optional right-side unit text (e.g. '원'). 16px Regular, color {label.900}", "fontSize": 16 },
+          "trailingButton": { "description": "Optional Line-style button (e.g. '버튼') sitting to the right of the input as a suffix action.", "reference": "See button.json → variants.line for styling" },
+          "description": { "description": "Helper text below input. 12px Medium. Color changes per state (default {label.600}, error {status.error})." }
+        }
+      },
+      "big": {
+        "_description": "Large bordered text field. Used for emphasized numeric/money inputs or important single-field data entry.",
+        "size": "M only",
+        "inputHeight": 55,
+        "paddingX": 16,
+        "paddingY": 11,
+        "inputFontSize": 22,
+        "inputFontSizeAlias": "title4",
+        "gapLabelToInput": 8,
+        "gapInputToDescription": 6,
+        "cursorHeight": 24,
+        "cursorWidth": 1,
+        "states": {
+          "enabled":  { "background": "{static.white}", "border": "{gray.300}", "placeholder": "{label.500}" },
+          "focused":  { "background": "{static.white}", "border": "{gray.800}", "placeholder": "{label.500}", "cursor": "{gray.700}" },
+          "error":    { "background": "{static.white}", "border": "{status.error}", "text": "{label.900}", "descriptionColor": "{status.error}" }
+        },
+        "optionalSlots": {
+          "unit": { "description": "Larger unit label (e.g. '원'). 22px Medium title4, color {label.800}.", "fontSize": 22 },
+          "rightIcon": { "size": 24, "role": "cancel-circle / clear" }
+        }
+      }
+    },
+    "line": {
+      "line": {
+        "_description": "Underline-only text field. Used on narrow mobile screens where margin needs preserving, or as a supplementary input inside information-dense lists.",
+        "width": 402,
+        "inputHeight": 33,
+        "paddingX": 0,
+        "paddingY": 0,
+        "inputFontSize": 22,
+        "inputFontSizeAlias": "title4",
+        "separatorHeight": 2,
+        "cursorHeight": 24,
+        "cursorWidth": 2,
+        "cursorRadius": 10,
+        "gapLabelToInput": 4,
+        "gapInputToDescription": 4,
+        "states": {
+          "enabled":  { "labelColor": "{label.900}",    "placeholder": "{label.500}", "separator": "{gray.300}" },
+          "focus":    { "labelColor": "{brand.600}",    "placeholder": "{label.500}", "separator": "{brand.600}", "cursor": "{brand.600}" },
+          "typing":   { "labelColor": "{label.900}",    "text": "{label.900}",        "separator": "{brand.600}", "cursor": "{brand.600}" },
+          "filled":   { "labelColor": "{label.900}",    "text": "{label.900}",        "separator": "{gray.300}" },
+          "disabled": { "labelColor": "{label.900}",    "placeholder": "{label.400}", "separator": "{gray.300}" }
+        },
+        "negativeOverride": {
+          "_description": "When Negative=True, the following tokens switch to error colors. Applies to Typing and Filled.",
+          "labelColor": "{status.error}",
+          "separator": "{status.error}",
+          "descriptionColor": "{status.error}"
+        },
+        "optionalSlots": {
+          "unit": { "description": "Right-side unit (e.g. '원'). 20px Medium heading1, color {label.600}.", "fontSize": 20, "color": "{label.600}" },
+          "cancelIcon": { "size": 24, "role": "clear" },
+          "time": { "description": "Countdown timer display (e.g. '02:57'). 16px Regular body1 {label.900}, padded 4px on x with radius 6." }
+        },
+        "description": { "fontSize": 12, "fontWeight": 500, "color": "{gray.700}", "lineHeight": 1.125, "_note": "Non-standard tight line-height (1.125) on description — preserve." }
+      },
+      "big": {
+        "_description": "Very large display text field. Used for separated input steps on narrow mobile screens or fields needing strong visual feedback.",
+        "width": 402,
+        "inputHeight": 48,
+        "paddingX": 0,
+        "paddingY": 0,
+        "inputFontSize": 32,
+        "inputFontSizeAlias": "32 (mobile scale, raw px)",
+        "separatorHeight": 2,
+        "cursorHeight": 36,
+        "cursorWidth": 2,
+        "cursorRadius": 10,
+        "gapLabelToInput": 8,
+        "states": {
+          "enabled":  { "labelColor": "{label.900}", "placeholder": "{label.500}", "separator": "{gray.300}" },
+          "focused":  { "labelColor": "{brand.600}", "separator": "{brand.600}",    "cursor": "{brand.600}" },
+          "typing":   { "labelColor": "{label.900}", "text": "{label.900}",         "separator": "{brand.600}", "cursor": "{brand.600}" },
+          "filled":   { "labelColor": "{label.900}", "text": "{label.900}",         "separator": "{gray.300}" },
+          "disabled": { "labelColor": "{label.900}", "placeholder": "{label.400}",  "separator": "{gray.300}" }
+        },
+        "negativeOverride": {
+          "labelColor": "{status.error}",
+          "separator": "{status.error}",
+          "descriptionColor": "{status.error}"
+        },
+        "optionalSlots": {
+          "cancelIcon": { "size": 24, "role": "clear" }
+        }
+      }
+    }
+  },
+  "textArea": {
+    "box": {
+      "_description": "Multi-line text input. Box-only (no Line variant). Used for long-form user content with optional checkbox + character counter + info badge row below.",
+      "width": 353,
+      "minHeight": 78,
+      "paddingX": 16,
+      "paddingY": 15,
+      "inputFontSize": 16,
+      "inputFontSizeAlias": "body1",
+      "borderRadius": 8,
+      "gapLabelToInput": 6,
+      "gapInputToDescription": 6,
+      "cursorHeight": 16,
+      "cursorWidth": 1,
+      "states": {
+        "enabled":  { "background": "{static.white}", "border": "{gray.300}", "placeholder": "{label.500}" },
+        "hover":    { "_note": "Not extracted in this session — similar to Enabled." },
+        "focused":  { "background": "{static.white}", "border": "{gray.800}", "placeholder": "{label.500}", "cursor": "{gray.700}" },
+        "typing":   { "_note": "Not extracted individually — follows Focused pattern with cursor {brand.600}." },
+        "filled":   { "background": "{static.white}", "border": "{gray.300}", "text": "{label.900}" },
+        "error":    { "background": "{static.white}", "border": "{status.error}", "text": "{label.800}", "descriptionColor": "{status.error}" },
+        "disabled": { "background": "{gray.200}", "border": "{gray.300}", "text": "{label.500}" }
+      },
+      "descriptionRow": {
+        "_description": "Optional row below the textarea holding helper text + controls. All slots optional; laid out horizontally with 6px gap.",
+        "gap": 6,
+        "slots": {
+          "description": { "fontSize": 12, "color": "{label.600}", "errorColor": "{status.error}" },
+          "checkbox": {
+            "size": 18,
+            "borderWidth": 1.5,
+            "borderColor": "{label.300}",
+            "borderRadius": 4,
+            "background": "{static.white}",
+            "labelFontSize": 14,
+            "labelColor": "{label.900}"
+          },
+          "counter": { "description": "Right-aligned character count (e.g. '0/1000').", "fontSize": 12, "color": "{label.600}", "alignment": "right, flex-1" },
+          "divider": { "width": 1, "height": 12, "color": "{stroke.solid}" },
+          "badge": {
+            "description": "Small info badge on the right end (e.g. '맞춤법검사').",
+            "background": "{badge.background}",
+            "border": "1px solid {badge.stock}",
+            "borderRadius": 4,
+            "paddingTop": 1,
+            "paddingBottom": 2,
+            "paddingX": 5,
+            "gap": 2,
+            "fontSize": 11,
+            "fontColor": "{badge.font}"
+          }
+        }
+      },
+      "scrollBar": {
+        "_description": "Optional vertical scrollbar shown when content exceeds height.",
+        "width": 3,
+        "padding": 3,
+        "track": "{gray.300}",
+        "thumbBorderRadius": 999
+      }
+    }
+  },
+  "resources": {
+    "_description": "Atomic parts reused inside the above text inputs. They can also appear standalone in forms.",
+    "label": {
+      "_description": "Field label sitting above the input. 4 variants from 2 booleans (Asterisk, Negative).",
+      "fontSize": 14,
+      "fontSizeAlias": "body2",
+      "fontWeight": 500,
+      "variants": {
+        "asterisk_false_negative_false": { "color": "{label.800}" },
+        "asterisk_true_negative_false":  { "color": "{label.800}", "asterisk": { "size": 4, "color": "{status.error}", "shape": "dot", "gap": 2, "position": "right of label" } },
+        "asterisk_false_negative_true":  { "color": "{status.error}" },
+        "asterisk_true_negative_true":   { "color": "{status.error}", "asterisk": { "size": 4, "color": "{status.error}", "shape": "dot", "gap": 2 } }
+      },
+      "optionalSlots": {
+        "infoIcon": { "size": 16, "role": "tooltip trigger — appears to the right of the label text" }
+      }
+    },
+    "time": {
+      "_description": "Countdown timer used inside inputs (e.g. verification code expiry).",
+      "type_iOS": {
+        "fontSize": 16,
+        "fontSizeAlias": "body1",
+        "fontWeight": 400,
+        "color": "{label.900}",
+        "paddingX": 4,
+        "borderRadius": 6,
+        "format": "mm:ss (e.g. '02:57')"
+      }
+    },
+    "description": {
+      "_description": "Helper text below an input.",
+      "fontSize": 12,
+      "fontWeight": 500,
+      "gap": 2,
+      "states": {
+        "default": { "color": "{label.600}" },
+        "error":   { "color": "{status.error}" }
+      },
+      "optionalSlots": {
+        "leftIcon":  { "size": 14 },
+        "rightIcon": { "size": 14 }
+      }
+    }
+  },
+  "_notes": {
+    "scope": [
+      "TextField/Box/Hero excluded per request.",
+      "Desktop size variants: there are no Desktop/Mobile platform variants for Text Input — sizes are M/S (Box/Box) and M (Box/Big). Line variants have no sizes.",
+      "Some states (Hover for Box/Box, Hover/Typing for TextArea) were not individually extracted and are flagged with _note fields. For now, treat them as following the Enabled→Focused transition pattern."
+    ],
+    "color_patterns": [
+      "Focused border always flips to {label.800} (#333) / {gray.800} — neutral dark instead of brand color. The BRAND color appears only in Line variants and in cursors.",
+      "Cursors: static-position focused cursor uses {gray.700}; actively-typing cursor uses {brand.600}. Line variants use brand.600 for both (they have a single Focus state that covers cursor position).",
+      "Negative=True / Error state: border + label text + description + separator all switch to {status.error}. Input value text stays {label.900} (legible) — only surrounding chrome turns red.",
+      "Disabled: Box types use {background.alternative} bg with {label.300} border; Line types keep transparent bg and only dim text/label to {label.400} or keep {label.900}.",
+      "TextArea error state shows the same Border/Description red as TextField but text color shifts to {label.800} (slightly darker than default placeholder {label.500}) to emphasize the error value."
+    ],
+    "typography_quirks": [
+      "Line variant description uses lineHeight 1.125 (tight) instead of system default 1.5.",
+      "Box/Big and Line/Big use 22px (title4) for input, 32px for Line/Big — notably larger than the 16px body1 used elsewhere."
+    ],
+    "token_references": "Values like {background.default}, {label.800}, {gray.300}, {brand.600}, {status.error}, {stroke.solid}, {badge.background}, {badge.stock}, {badge.font} resolve against ~/design-system/colors/*.json. Font aliases (body1, body2, title4, heading1) resolve against ~/design-system/typography/typography.json."
+  }
+}
