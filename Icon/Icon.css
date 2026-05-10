@@ -21,14 +21,10 @@
   height: 100%;
 }
 
-/* 단색 — fill을 currentColor로 강제 */
-.bds-icon:not(.bds-icon--colored) svg,
-.bds-icon:not(.bds-icon--colored) svg path,
-.bds-icon:not(.bds-icon--colored) svg rect,
-.bds-icon:not(.bds-icon--colored) svg circle,
-.bds-icon:not(.bds-icon--colored) svg polygon,
-.bds-icon:not(.bds-icon--colored) svg polyline,
-.bds-icon:not(.bds-icon--colored) svg ellipse {
+/* 단색 — fill 속성이 명시된 element만 currentColor로 강제.
+   fill 속성이 없는 path는 부모 <svg fill="none">을 상속 → outline-stroke 아이콘
+   (heart/pen 등)이 검정 덩어리로 차는 것을 방지. */
+.bds-icon:not(.bds-icon--colored) svg [fill]:not([fill="none"]) {
   fill: currentColor;
 }
 
