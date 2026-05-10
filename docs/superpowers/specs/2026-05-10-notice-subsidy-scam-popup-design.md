@@ -69,8 +69,8 @@
 
 | 영역 | PC (≥768px) | Mobile (<768px) |
 |---|---|---|
-| 카드 width | 480px | 320–360px (좌우 24 padding) |
-| 카드 padding | 32px | 24px |
+| 카드 width | 450px | 320–360px (좌우 24 padding) |
+| 카드 padding | 28px (spacing-28) | 24px (spacing-24) |
 | 메인 타이틀 | 32/Bold | 24/Bold |
 | 뉴스 타이틀 | 20/Bold | 18/Bold |
 | 카드 ↔ 카드 내부 gap | 24px | 16px |

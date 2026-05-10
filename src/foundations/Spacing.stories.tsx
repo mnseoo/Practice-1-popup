@@ -40,7 +40,6 @@ const spacings: Spec[] = [
   { name: "spacing-20", cssVar: "--spacing-20", value: "20px" },
   { name: "spacing-24", cssVar: "--spacing-24", value: "24px" },
   { name: "spacing-28", cssVar: "--spacing-28", value: "28px" },
-  { name: "spacing-32", cssVar: "--spacing-32", value: "32px", missing: true },
   { name: "spacing-36", cssVar: "--spacing-36", value: "36px" },
   { name: "spacing-48", cssVar: "--spacing-48", value: "48px" },
   { name: "spacing-56", cssVar: "--spacing-56", value: "56px" },

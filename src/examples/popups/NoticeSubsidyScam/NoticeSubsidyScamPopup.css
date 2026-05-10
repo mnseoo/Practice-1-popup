@@ -23,8 +23,8 @@
 }
 
 .mc-notice-popup--pc {
-  width: 480px;
-  padding: var(--spacing-32);
+  width: 450px;
+  padding: var(--spacing-28);
   gap: var(--spacing-24);
 }
 

@@ -10,7 +10,7 @@
  *   System Tokens는 Mobile/Desktop 모드별로 같은 키에 다른 px 값을 가진다.
  *   웹 CSS에서는 px 값을 그대로 매핑하는 단일 스케일로 유지하고,
  *   컴포넌트가 PC variant에서 더 큰 값을 명시적으로 선택한다.
- *   (예: 카드 padding을 PC=spacing-32, Mobile=spacing-24로 직접 지정)
+ *   (예: 카드 padding을 PC=spacing-28, Mobile=spacing-24로 직접 지정)
  */
 
 :root {
@@ -114,10 +114,6 @@
   --spacing-56: 56px;
   --spacing-62: 62px;
   --spacing-100: 100px;
-
-  /* ⚠️ 디자인 시스템 토큰엔 누락 — 28과 36 사이의 빈 슬롯 메우기용
-     향후 Mobile.tokens.json Spacing에 32 추가 시 정식 토큰으로 승격. */
-  --spacing-32: 32px;
 
   /* ============================================================ */
   /* Radius — Mobile.tokens.json Radius 필드와 1:1                  */
