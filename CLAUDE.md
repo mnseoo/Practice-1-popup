@@ -190,3 +190,7 @@ cmux로 여러 프로젝트를 굴린다면 **옵션 A** 추천. 디자인 시�
 - 1번뿐 → 다음 /회고 때 점검
 
 (여기에 1줄씩 던져두기)
+
+- design_context inset% × 24px 환산 시 손계산 실수 — 좌표 계산 후 sanity check 필요 (kakao-channel 말풍선 `4 → 1` 정정 사례)
+- Figma `<div className="absolute contents …">` wrapper가 자식 위치 계산에 영향 미치는지 비표준 — 다중 wrapping vector subset 만나면 hard reload 결과로 검증
+- `.claude/commands/`(슬래시) vs `.claude/skills/[name]/SKILL.md`(스킬) 구분 — 둘 다 프로젝트 `.claude/`에 두면 디자인 시스템 패키지와 함께 이동
