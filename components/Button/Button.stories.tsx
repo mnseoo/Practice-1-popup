@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
+import type { Meta, StoryObj } from "@storybook/react";
 import { Button, type ButtonSize, type ButtonVariant } from "./Button";
 
 const ALL_SIZES: ButtonSize[] = ["xs", "s", "m", "l", "xl", "2xl", "3xl", "4xl"];
