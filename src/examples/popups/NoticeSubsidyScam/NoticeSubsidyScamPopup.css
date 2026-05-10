@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: var(--spacing-24);
   z-index: 1000;
 }
 
@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   background: var(--background-default);
-  border-radius: 12px;
+  border-radius: var(--radius-12);
   box-shadow: var(--elevation-l);
   font-family: var(--font-family-base);
   color: var(--label-900);
@@ -24,15 +24,15 @@
 
 .mc-notice-popup--pc {
   width: 480px;
-  padding: 32px;
-  gap: 24px;
+  padding: var(--spacing-32);
+  gap: var(--spacing-24);
 }
 
 .mc-notice-popup--mobile {
   width: 100%;
   max-width: 360px;
-  padding: 24px;
-  gap: 16px;
+  padding: var(--spacing-24);
+  gap: var(--spacing-16);
 }
 
 /* ===== Title ===== */
@@ -40,33 +40,31 @@
   margin: 0;
   color: var(--label-900);
   letter-spacing: 0;
+  font-weight: 700;
+  line-height: var(--line-height-ratio);
 }
 
 .mc-notice-popup--pc .mc-notice-popup__title {
-  font-size: var(--font-title-2);    /* 32px */
-  font-weight: 700;
-  line-height: 1.5;                  /* 48px */
+  font-size: var(--font-title-2);    /* 32 */
 }
 
 .mc-notice-popup--mobile .mc-notice-popup__title {
-  font-size: var(--font-title-3);    /* 24px */
-  font-weight: 700;
-  line-height: 1.5;                  /* 36px */
+  font-size: var(--font-title-3);    /* 24 */
 }
 
 /* ===== News card ===== */
 .mc-notice-popup__news {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  padding: 16px;
+  gap: var(--spacing-12);
+  padding: var(--spacing-16);
   background: var(--background-alternative);
-  border-radius: 8px;
+  border-radius: var(--radius-8);
 }
 
 .mc-notice-popup--mobile .mc-notice-popup__news {
-  padding: 12px;
-  gap: 10px;
+  padding: var(--spacing-12);
+  gap: var(--spacing-10);
 }
 
 .mc-notice-popup__news-thumb {
@@ -74,26 +72,26 @@
   width: 64px;
   height: 64px;
   object-fit: contain;
-  border-radius: 4px;
+  border-radius: var(--radius-4);
 }
 
 .mc-notice-popup--mobile .mc-notice-popup__news-thumb {
-  width: 56px;
-  height: 56px;
+  width: var(--spacing-56);
+  height: var(--spacing-56);
 }
 
 .mc-notice-popup__news-body {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  min-width: 0; /* 자식 줄바꿈 보장 */
+  gap: var(--spacing-4);
+  min-width: 0;
   flex: 1;
 }
 
 .mc-notice-popup__news-date {
-  font-size: var(--font-label-2);    /* 12px */
+  font-size: var(--font-label-2);    /* 12 */
   font-weight: 500;
-  line-height: 1.5;
+  line-height: var(--line-height-ratio);
   color: var(--label-500);
   letter-spacing: 0;
 }
@@ -103,23 +101,22 @@
   font-weight: 700;
   letter-spacing: 0;
   color: var(--label-900);
+  line-height: var(--line-height-ratio);
 }
 
 .mc-notice-popup--pc .mc-notice-popup__news-title {
-  font-size: var(--font-heading-1);  /* 20px */
-  line-height: 1.5;
+  font-size: var(--font-heading-1);  /* 20 */
 }
 
 .mc-notice-popup--mobile .mc-notice-popup__news-title {
-  font-size: var(--font-heading-2);  /* 18px */
-  line-height: 1.5;
+  font-size: var(--font-heading-2);  /* 18 */
 }
 
 .mc-notice-popup__news-copy {
   margin: 0;
-  font-size: var(--font-body-2);     /* 14px */
+  font-size: var(--font-body-2);     /* 14 */
   font-weight: 400;
-  line-height: 1.5;
+  line-height: var(--line-height-ratio);
   color: var(--label-600);
   letter-spacing: 0;
 }
@@ -131,15 +128,15 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-8);
 }
 
 .mc-notice-popup__bullet {
   position: relative;
-  padding-left: 14px;
-  font-size: var(--font-body-1);     /* 16px */
+  padding-left: var(--spacing-14);
+  font-size: var(--font-body-1);     /* 16 */
   font-weight: 500;
-  line-height: 1.5;
+  line-height: var(--line-height-ratio);
   color: var(--label-800);
   letter-spacing: 0;
 }
@@ -147,14 +144,14 @@
 .mc-notice-popup__bullet::before {
   content: "•";
   position: absolute;
-  left: 2px;
+  left: var(--spacing-2);
   top: 0;
   color: var(--label-500);
   font-weight: 700;
 }
 
 .mc-notice-popup--mobile .mc-notice-popup__bullet {
-  font-size: var(--font-body-2);     /* 14px on mobile */
+  font-size: var(--font-body-2);     /* 14 */
 }
 
 .mc-notice-popup__bullet--alert {
@@ -169,5 +166,5 @@
 /* ===== CTA ===== */
 .mc-notice-popup__cta {
   width: 100%;
-  margin-top: 4px;
+  margin-top: var(--spacing-4);
 }

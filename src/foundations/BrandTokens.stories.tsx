@@ -25,12 +25,17 @@ const elevations = [
 ];
 
 const radii = [
+  { token: "radius-0", cssVar: "--radius-0" },
   { token: "radius-2", cssVar: "--radius-2" },
   { token: "radius-4", cssVar: "--radius-4" },
-  { token: "radius-6", cssVar: "--radius-6" },
   { token: "radius-8", cssVar: "--radius-8" },
+  { token: "radius-10", cssVar: "--radius-10" },
   { token: "radius-12", cssVar: "--radius-12" },
   { token: "radius-16", cssVar: "--radius-16" },
+  { token: "radius-20", cssVar: "--radius-20" },
+  { token: "radius-24", cssVar: "--radius-24" },
+  { token: "radius-28", cssVar: "--radius-28" },
+  { token: "radius-999", cssVar: "--radius-999" },
 ];
 
 export const All: Story = {
