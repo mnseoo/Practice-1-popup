@@ -98,6 +98,12 @@ export function Icon({
     if (!primary[name] && fallback[name]) {
       resolvedStyle = iconStyle === "bold" ? "regular" : "bold";
     }
+    // 단색 양쪽에 없는데 color 폴더에 있으면 color로 자동 fallback
+    // (예: <Icon name="emergency" /> 호출 시 iconStyle 명시 없이 color 카테고리로 해석)
+    if (!svg && colorMap[name]) {
+      svg = colorMap[name];
+      resolvedStyle = "color";
+    }
   }
 
   // 2) color 아이콘이거나 colored=true → 원본 색 보존
